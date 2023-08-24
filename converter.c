@@ -22,6 +22,5 @@ char *convert(unsigned long int num, int base, int lowercase)
 		*--ptr = rep[num % base];
 		num /= base;
 	} while (num != 0);
-
 	return (ptr);
 }
